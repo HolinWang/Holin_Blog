@@ -1,5 +1,9 @@
 {
-  "dependencies": {
+  "name": "holin-blog",
+  "version": "1.0.0",
+  "description": "前端知识学习博客",
+  "type": "module",
+  "devDependencies": {
     "vitepress": "^1.6.4"
   },
   "scripts": {
