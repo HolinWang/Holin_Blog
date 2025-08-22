@@ -1,17 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "buildCommand": "pnpm build",
-        "distDir": "docs/.vitepress/dist"
-      }
-    }
-  ],
+  "buildCommand": "pnpm install && pnpm build",
+  "outputDirectory": "docs/.vitepress/dist",
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/" }
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
