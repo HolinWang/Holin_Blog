@@ -1,11 +1,12 @@
 {
-  "buildCommand": "pnpm install && pnpm docs:build",
-  "outputDirectory": "docs/.vitepress/dist",
-  "framework": null,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "docs/.vitepress/dist",
+      "use": "@vercel/static"
     }
+  ],
+  "rewrites": [
+    { "src": "/(.*)", "destination": "/index.html" }
   ]
-} 
+}
