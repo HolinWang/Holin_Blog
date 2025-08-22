@@ -4,7 +4,7 @@
   },
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "npm install && vitepress build docs",
+    "build": "vitepress build docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   }
