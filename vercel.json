@@ -1,11 +1,14 @@
 {
+  "framework": "vitepress",
   "version": 2,
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "docs/.vitepress/dist"
+        "distDir": "docs/.vitepress/dist",
+        "installCommand": "npm install",
+        "buildCommand": "npm run build"
       }
     }
   ],
